@@ -1,0 +1,572 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#main-banner {
+    position: absolute;
+    z-index: 1s;
+    width: 100%;
+    height: 100vh;
+}
+
+#banner-color-shade {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(137, 43, 226, 0.305);
+    position: absolute;
+    z-index: 2;
+}
+
+#header {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 20vh;
+    border-bottom: 0.7px solid #ffffff53;
+}
+
+@font-face {
+    font-family: 'Robot Reavers';
+    src: url('./Font/RobotReavers.eot');
+    src: url('./Font/RobotReavers.eot?#iefix') format('embedded-opentype'),
+        url('./Font/RobotReavers.woff2') format('woff2'),
+        url('./Font/RobotReavers.woff') format('woff'),
+        url('./Font/RobotReavers.ttf') format('truetype'),
+        url('./Font/RobotReavers.svg#RobotReavers') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#cgl-logo {
+    font-family: 'Robot Reavers';
+    font-size: 70px;
+    font-weight: 900;
+    color: #eeeeee;
+    letter-spacing: 8px;
+    clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 35%, 100% 35%, 100% 43%, 0 43%, 0 100%, 100% 100%, 100% 0%);
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+#cgl-reabrv {
+    font-family: 'Robot Reavers';
+    font-size: 12px;
+    font-weight: 900;
+    color: #eeeeee;
+    margin-left: 100px;
+
+}
+
+ul {
+    margin-left: 450px;
+    position: absolute;
+    z-index: 4;
+    padding: 0;
+    margin-top: -50px;
+}
+
+li {
+    display: inline;
+    margin-left: 35px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #eeeeee;
+    display: inline-block;
+}
+
+a:hover{
+    border-bottom: 5px solid rgb(196, 65, 0);
+    padding-bottom: 3px;
+}
+
+#usericon {
+    filter: invert();
+    width: 13px;
+}
+
+#username {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eeeeee;
+    display: inline-block;
+}
+
+#user {
+    margin-left: 1300px;
+    margin-top: -50px;
+}
+
+#landing-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #eee;
+    z-index: 3;
+    width: 1100px;
+;
+}
+
+#welcome {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(196, 65, 0);
+    display: inline;
+    padding-bottom: 2px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+#cglcapt {
+    font-family: 'Robot Reavers';
+    background-color: rgb(196, 65, 0);
+    font-weight: bold;
+
+}
+
+#line {
+    position: absolute;
+    top: 109px;
+    width: 1100px;
+    height: 7px;
+    background-color: rgb(196, 65, 0);
+}
+
+#join {
+    width: 120px;
+    height: 35px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    border: 4px solid rgb(196, 65, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 16px;
+    color: #eee;
+    top: 550px;
+    left: 1100px;
+}
+
+#join:hover {
+    background-color: #eeeeeeac;
+    color:rgb(196, 65, 0)
+}
+
+/* News Portion */
+
+#news {
+    width: 100%;
+    height: 100vh;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 100vh;
+}
+
+.part-title {
+    font-size: 30px;
+    color:rgb(196, 65, 0);
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+#newscontent {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+
+.cimg {
+    position: relative;
+    z-index: 5;
+    width: 300px;
+    height: 200px;
+    top: 900px;
+}
+
+figcaption {
+    z-index: 4;
+    position: absolute;
+    top: 1130px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.bannershade {
+    background-color: rgba(137, 43, 226, 0.305);
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: 5;
+    top: 900px;
+}
+
+.readmore {
+    position: relative;
+    z-index: 5;
+    top: 980px;
+    left: 200px;
+    width: 100px;
+    height: 30px;
+    border: 3px solid rgb(196, 65, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #494949;
+}
+
+.readmore:hover {
+    background-color: #4949494a;
+    color: rgb(196, 65, 0);
+}
+
+.dummytxt {
+    position: relative;
+    z-index: 5;
+    top: 1000px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.speech-bubble {
+    position: relative;
+    z-index: 5;
+    width: 20px;
+    height: 15px;
+    background-color: rgb(196, 65, 0);
+    top: 1020px;
+    left: 210px;
+    border-radius: 50%;
+}
+
+.speech-arrow {
+    position: relative;
+    z-index: 5;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid rgb(196, 65, 0);
+    top: 10px;
+    left: 1px;
+    transform: rotate(30deg);
+}
+
+.speech-bubble > p {
+    position: relative;
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    left: 25px;
+    top: -5px;
+}
+
+.calendar-icon {
+    position: relative;
+    z-index: 5;
+    width: 20px;
+    height: 20px;
+
+}
+
+.calendar-all > p {
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: -18px;
+    left: 25px;
+}
+
+.calendar-all {
+    top: 0px;
+    left: -200px;
+    position: absolute;
+}
+
+/* Competitive Part */
+
+#competitive {
+    width: 100%;
+    height: 120vh;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 200vh;
+}
+
+.team-icons {
+    width: 50px;
+    height: 50px;
+}
+
+.summary {
+    width: 800px;
+    margin-left: 20%;
+    margin-top: 80px;
+}
+
+.game-txt {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(196, 65, 0);
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.resume {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+.titwo {
+    margin-left: 150px;
+}
+
+.score-number {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.match-date {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.scoretxt {
+    margin-left: 95px;
+    margin-top: -55px;
+}
+
+.score {
+    margin-left: 1130px;
+    margin-top: -50px;
+}
+
+/* Contact Us/ About Us */
+
+#contact {
+    width: 100%;
+    height: 60vh;
+    background-color: #0c0c0c;
+    position: absolute;
+    color: #fff;
+    position: absolute;
+    top: 100vh;
+}
+
+#about-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 380px;
+    margin-top: 40px;
+}
+
+#about-txt {
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: 270px;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+}
+
+#social-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-left: 340px;
+    margin-top: 70px;
+}
+
+.social-icons {
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+.facebookicon, .discordicon {
+    filter: invert();
+}
+
+.twitchicon {
+    filter: brightness(10);
+}
+
+#socialicons {
+    margin-left: 280px;
+}
+
+#latest-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 700px;
+    margin-top: -350px;
+}
+
+.rdmimg {
+    width: 90px;
+    height: 60px;
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 30px;
+}
+
+.latestimgs {
+    margin-left: 660px;
+}
+
+.latest-announcement {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.secondcalendar {
+    width: 15px;
+    height: 15px;
+}
+
+.latest-date {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.lit-snd {
+    position: absolute;
+    z-index: 6;
+    margin-left: 110px;
+    margin-top: -85px;
+}
+
+#latest {
+    margin-left: 30px;
+}
+
+#donate-title {
+    position: absolute;
+    z-index: 6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 90px;
+    margin-left: 1100px;
+    margin-top: -345px;
+}
+
+#donate-txt {
+    position: absolute;
+    z-index: 6;
+    width: 220px;
+    margin-bottom: 30px;
+    margin-left: 1050px;
+    margin-top: -280px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+}
+
+#donate-btn {
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    border: 4px solid rgb(196, 65, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -150px;
+    margin-left: 1200px;
+    position: absolute;
+}
+
+#contact-title {
+    position: absolute;
+    z-index: 6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 90px;
+    margin-left: 1100px;
+    margin-top: -80px;
+}
+
+.contact-btns {
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    border: 4px solid rgb(196, 65, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -150px;
+    margin-left: 1200px;
+}
+
+.emailbtn {
+    margin-left: 1020px;
+}
+
+.discordbtn {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+
+.latestshade {
+    background-color: rgba(137, 43, 226, 0.305);
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    z-index: 7;
+    top: 115px;
+}
+
+.lshtwo {
+    margin-top: 91px;
+}
+
+.lshthree {
+    margin-top: 180px;
+}
